@@ -9,9 +9,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "path-to-regexp": "^6.2.1"
-  }
+  "license": "ISC"
 }
