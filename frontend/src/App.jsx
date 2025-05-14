@@ -29,25 +29,21 @@ const App = () => {
     <div>
       <Navbar />
       <Routes>
-        {/* Home page - only accessible if logged in */}
         <Route
           path="/"
           element={authUser ? <HomePage /> : <Navigate to="/login" />}
         />
 
-        {/* SignUp page - only accessible if not logged in */}
         <Route
           path="/sign-up"
           element={!authUser ? <SignUpPage /> : <Navigate to="/" />}
         />
 
-        {/* Login page - only accessible if not logged in */}
         <Route
           path="/login"
           element={!authUser ? <LoginPage /> : <Navigate to="/" />}
         />
 
-        {/* Profile page - only accessible if logged in */}
         <Route
           path="/profile"
           element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
